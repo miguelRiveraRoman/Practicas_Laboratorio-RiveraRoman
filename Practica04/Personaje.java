@@ -1,4 +1,4 @@
-//09:10-26/08/2022
+//10:02-26/08/2022
 //Rivera Román Miguel Esaú
 
 public class Personaje{
