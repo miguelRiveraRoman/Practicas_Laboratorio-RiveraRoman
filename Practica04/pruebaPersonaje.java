@@ -10,7 +10,7 @@ public class pruebaPersonaje{
 		System.out.println("Modificando el nombre "+alumno.getNombre());
 		alumno.setNombre("Michael Jordan");
 		alumno.saludar();
-		if(!alumno.set.Edad(30)){
+		if(!alumno.setEdad(30)){
 			System.out.println("Edad sin cambios");
 		}
 		System.out.println("Nombre: "+alumno.getNombre()+" Edad: "+alumno.getEdad());
