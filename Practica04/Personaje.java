@@ -5,6 +5,11 @@ public class Personaje{
 	private String nombre;  
 	private String edad;
 
+	public Personaje (String nombre){
+		this.nombre = nombre;
+		this.edad = 0;
+	}
+
 	public void setNombre(String nombre){
 		this.nombre = nombre;
 
