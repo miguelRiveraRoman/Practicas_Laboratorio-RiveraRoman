@@ -15,6 +15,15 @@ public class Personaje{
 
 	}
 
+	public int getEdad(){
+		return edad 
+	}
+
+	public boolean setEdad(int e){
+		if (e > 0 && e < 120)
+			
+	}
+
 	public String getNombre(){
 		return nombre;
 	}
