@@ -1,5 +1,6 @@
 //10:02-26/08/2022
 //Rivera Román Miguel Esaú
+//Cláse de la práctica 3 con constructor
 
 public class Personaje{
 	private String nombre;  
@@ -21,7 +22,7 @@ public class Personaje{
 
 	public boolean setEdad(int e){
 		if (e > 0 && e < 120)
-			
+			edad = false
 	}
 
 	public String getNombre(){
