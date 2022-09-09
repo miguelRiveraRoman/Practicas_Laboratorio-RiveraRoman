@@ -19,7 +19,7 @@ public class Personaje{
 	public void setNombre(String nombre){
 		int l = this.nombre.lenght();
 
-		if (l < 5 && l > 25) {
+		if (l < 5 || l > 25) {
 			System.out.println("Incumple con el número de cáracteres solicitados");
 			
 		}
