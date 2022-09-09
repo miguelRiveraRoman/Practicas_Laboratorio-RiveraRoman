@@ -9,9 +9,10 @@ public class Personaje{
 	private int edad;
 	private boolean edad2;
 
-	public Personaje (String nombre){
+	public Personaje (String nombre, int edad){
 		this.nombre = nombre;
-		this.edad = 0;
+		this.edad = edad;
+
 
 	}
 
