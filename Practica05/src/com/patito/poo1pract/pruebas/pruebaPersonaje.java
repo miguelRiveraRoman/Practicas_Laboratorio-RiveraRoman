@@ -1,6 +1,8 @@
 //10:02 AM
 //02/09/2022
 //Miguel Esaú Rivera Román 
+package com.patito.poo1pract.pruebas;
+import com.patito.poo1pract.personajes.*;
 
 public class pruebaPersonaje{
 	public static void main(String[] args){
