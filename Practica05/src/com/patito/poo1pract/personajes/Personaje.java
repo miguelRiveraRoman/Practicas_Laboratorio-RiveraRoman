@@ -1,6 +1,9 @@
 //10:02-26/08/2022
 //Rivera Román Miguel Esaú
 //Cláse de la práctica 3 con constructor
+package com.patito.poo1pract.personajes;
+
+import java.io*;
 
 public class Personaje{
 	private String nombre;  
