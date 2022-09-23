@@ -5,12 +5,16 @@ public class PruebasCiclos{
 		Personaje per01 = new Personaje("Bianca")
 		Personaje per01 = new Personaje("Jordan")
 	 int n,m;
-	this.n = 0
-	this.m = 0
+		n = 0
+		m = 0
 	}
 	{
-		for ( int n; n>= m ; Math.random()*100 ) {
+		while (true) {
+			int n = (int)(Math.random()*100)
+			int m = (int)(Math.random()*100)
+
 			
 		}
+		for ( int n; n>= m ; Math.random()*100 ) 
 	}
 }
