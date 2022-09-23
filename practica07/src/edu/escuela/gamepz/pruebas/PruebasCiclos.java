@@ -4,20 +4,20 @@ import edu.escuela.gamepz.personajes.*;
 public class PruebasCiclos{
 	public static void main(String[] args) {
 		Personaje per01 = new Personaje("Diego", 0);
-		Personaje per01 = new Personaje("Almendra", 0);
-		Personaje per01 = new Personaje("Bianca", 0);
-		Personaje per01 = new Personaje("Jordan", 0);
-	 int n,m;
-		n = 0
-		m = 0
-	}
-	{
-		while (n>=m); {
-			int n = (int)(Math.random()*100);
-			int m = (int)(Math.random()*100)			
+		Personaje per02 = new Personaje("Almendra", 0);
+		Personaje per03 = new Personaje("Bianca", 0);
+		Personaje per04 = new Personaje("Jordan", 0);
+	 int n = 0;
+	 int m = 0;
+
+		while (n>m); {
+			 n = (int)(Math.random()*100);
+			 m = (int)(Math.random()*100);	
+
 		}
 
-		System.out.println(n,m);
+		System.out.println(n);
+		System.out.println(m);
 		
 		outfor:
 		for (int i = n; i<m ; i++ ) {
@@ -36,9 +36,11 @@ public class PruebasCiclos{
 					System.out.println("El número generado es mayor a 150");
 					continue outfor;
 				}
-				while(per04.setEdad(ed));
+				
+					
+			}while(per04.setEdad(ed));
+				
 				System.out.println(per04.getDetalle());
-			}
 		}
 	}
 }
