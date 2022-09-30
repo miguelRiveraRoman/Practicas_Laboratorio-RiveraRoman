@@ -12,8 +12,18 @@ public class Serie{
 		this.se = se
 		se = (int)(Math random()*100);
 		this.n = n 
-		if (genNumero()) {
-			n < se
+		if (genNumero(n, se)) {
+			se < 10
+
+			return se 
+
+			if (genNumero(n, se) {
+				se => 10
+
+				retu 
+				
+			}		
+
 		}
 
 	}
