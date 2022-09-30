@@ -2,18 +2,19 @@ public class Serie{
 	
 	public int n;
 	public int t;
-	public int se = (int)(Math random()*100);
+	public int p;
+	public int se;
 	public int x = 0;
 	public int y = 1;
 	public int r = 1;
 
-	public Serie(int x, int y, int r) {
-		this.x = x; 
-		this.y = y; 
-		this.r = r;
-	} 
-
-	public int taArray() {
+	public int genNumero(int n){
+		this.se = se
+		se = (int)(Math random()*100);
+		this.n = n 
+		if (genNumero()) {
+			n < se
+		}
 
 	}
 
