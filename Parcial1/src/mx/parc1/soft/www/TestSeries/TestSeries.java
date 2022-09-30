@@ -6,6 +6,7 @@ public class TestSeries{
 		
 		s.primos(m);
 		
+		//No me sirve
 		int o = s.primoN(m/10);
 		
 		System.out.println(o);
@@ -14,8 +15,15 @@ public class TestSeries{
 		
 		s.fibo(n);
 		
-		int p = s.fiboN(3,11)
+		int p = s.fiboN(11)
 		
 		System.out.println(p);
+
+		elwhile:
+		while(true) {
+			int n = (int) (Math.rabdom()*100);
+			int m = (int) (MAth.random()*100);
+		}
+
 	}
 }
