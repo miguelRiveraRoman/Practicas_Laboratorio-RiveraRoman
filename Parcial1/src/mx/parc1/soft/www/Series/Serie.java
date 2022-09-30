@@ -19,4 +19,12 @@ public class Serie{
    		x = y 
    		y = r
    }
+
+
+    public esMenor(int s) {
+    	if (esMenor(s)) {
+    		
+    	}
+    }
+
 }
