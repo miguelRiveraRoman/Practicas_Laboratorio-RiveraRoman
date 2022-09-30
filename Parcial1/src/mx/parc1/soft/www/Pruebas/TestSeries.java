@@ -21,10 +21,12 @@ public class TestSeries{
 
 		elwhile:
 		while(true) {
-			int n = (int) (Math.random()*100);
-			int m = (int) (MAth.random()*100);
+			int n = (int) (Math.random()*10);
+			int m = (i
 			switch (n) {
-
+				case 
+				case 	
+				case 	
 			}
 
 		}
