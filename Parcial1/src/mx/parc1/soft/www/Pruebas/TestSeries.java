@@ -19,17 +19,5 @@ public class TestSeries{
 		
 		System.out.println(p);
 
-		elwhile:
-		while(true) {
-			int n = (int) (Math.random()*10);
-			int m = (i
-			switch (n) {
-				case 
-				case 	
-				case 	
-			}
-
-		}
-
 	}
 }
