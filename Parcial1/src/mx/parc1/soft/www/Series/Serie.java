@@ -1,6 +1,6 @@
 public class Serie{
 	
-	public int s = (int)(Math random()*10);
+	public int se = (int)(Math random()*10);
 	public int x = 0;
 	public int y = 1;
 	public int r = 1;
@@ -11,18 +11,19 @@ public class Serie{
 		this.r = r;
 	} 
 
-   for (int i = 1; i < s; i++){
+	public int[] createArray() {
+		for (int i = 1; i < se; i++){
 
-   		System.out.println(r);
+   			System.out.println(r);
 
-   		r = x + y 
-   		x = y 
-   		y = r
+   			r = x + y 
+   			x = y 
+   			y = r
    }
 
-
-    public esMenor(int s) {
-    	if (esMenor(s)) {
+    public boolean esMenor(int se) {
+    	boolean se = false;
+    	if (esMenor(se)) {
     		
     	}
     }
