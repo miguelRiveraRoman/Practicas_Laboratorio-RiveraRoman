@@ -9,9 +9,9 @@ public class TestSeries{
 		int o = s.primoN(m/10);
 		
 		System.out.println(o);
-		
-		int n = s.genNumero(100);
 		*/
+		int n = s.genNumero(10);
+		
 		s.fibo(n);
 		
 		int p = s.fiboN(11)

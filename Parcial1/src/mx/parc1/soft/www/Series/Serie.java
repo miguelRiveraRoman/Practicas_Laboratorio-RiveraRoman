@@ -1,6 +1,8 @@
 public class Serie{
 	
-	public int se = (int)(Math random()*10);
+	public int n;
+	public int t;
+	public int se = (int)(Math random()*100);
 	public int x = 0;
 	public int y = 1;
 	public int r = 1;
@@ -11,8 +13,16 @@ public class Serie{
 		this.r = r;
 	} 
 
+	public int taArray() {
+
+	}
+
+
 	public int[] createArray() {
-		for (int i = 1; i < se; i++){
+		int[] t;
+
+		t = new int[];
+		for (int i = 1; i < se; i++) {
 
    			System.out.println(r);
 
