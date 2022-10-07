@@ -25,28 +25,28 @@ public class Planta extends Personaje{
 		return escudo;
 	}
 
-	public int decVida(){
+	public int decVida(char escudo){
 		super.decVida(){
 			if (escudo = "A") {
 				vida = vida*2
 			}
 		}
 	}
-	public int decVida(){
+	public int decVida(char escudo){
 		super.decVida(){ 
 			if (escudo = "A") {
 				this.vida = vida*2
 			}		
 		}
 	}
-	public int addVida(){
+	public int addVida(char escudo){
 		super.addVida(){
 			if (escudo = "A") {
 				this.vida = vida*2
 			}				
 		}
 	}
-	public int addVida(){
+	public int addVida(char escudo){
 		super.addVida(){
 			if (escudo = "A") {
 				this.vida = vida*2
