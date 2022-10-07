@@ -22,10 +22,7 @@ public class Personaje{
 	}
 
 	}
-	public Personaje (String nombre, int vida){
-		this.nombre = nombre;
-		setVida(vida);
-	}
+
 	public void setVida(int vida){
 		if (vida>0 && vida<99){
 			this.vida = vida;
