@@ -8,7 +8,7 @@ public class Planta extends Personaje{
 	}
 	public Planta(String nombre, char escudo){
 		super(nombre);
-		
+
 	}
 	public Planta(String nombre, int vida){
 		super(nombre,vida);
@@ -17,8 +17,40 @@ public class Planta extends Personaje{
 		super(nombre);
 	}
 
+	public String getDetalle(){
+		super.getDetalle();
+	}
 
 	public char getEscudo(){
 		return escudo;
+	}
+
+	public int decVida(){
+		super.decVida(){
+			if (escudo = "A") {
+				vida = vida*2
+			}
+		}
+	}
+	public int decVida(){
+		super.decVida(){ 
+			if (escudo = "A") {
+				this.vida = vida*2
+			}		
+		}
+	}
+	public int addVida(){
+		super.addVida(){
+			if (escudo = "A") {
+				this.vida = vida*2
+			}				
+		}
+	}
+	public int addVida(){
+		super.addVida(){
+			if (escudo = "A") {
+				this.vida = vida*2
+			}				
+		}
 	}
 }
