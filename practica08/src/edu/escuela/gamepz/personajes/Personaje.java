@@ -2,21 +2,22 @@ package edu.escuela.gamepz.personajes;
 
 public class Personaje{
 	private String nombre;
-	private int edad;
+	private int vida;
 	public void setNombre(String nombre){
 		int length = nombre.length();
 		if (length>5 && length<25){
 		this.nombre = nombre;
-		setEdad(edad);
+		setvida(vida);
 	}
+
 	}
-	public Personaje (String nombre, int edad){
+	public Personaje (String nombre, int vida){
 		this.nombre = nombre;
-		setEdad(edad);
+		setVida(vida);
 	}
-	public boolean setEdad(int edad){
-		if (edad>0 && edad<120){
-			this.edad = edad;
+	public boolean setVida(int vida){
+		if (vida>0 && vida<99){
+			this.vida = vida;
 			return true;
 		}else{
 			return false;
@@ -25,11 +26,11 @@ public class Personaje{
 	public String getNombre(){
 		return nombre;
 	}
-	public int getEdad(){
-		return edad;
+	public int getVida(){
+		return vida;
 	}
 	public String getDetalle(){
-		return nombre+"\t"+edad;
+		return nombre+"\t"+vida;
 	}
 }
 
