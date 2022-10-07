@@ -47,16 +47,16 @@ public class Personaje{
 
 
 	public void decVida(){
-
+		vida = vida - 1;
 	}
 	public void decVida(int vida){
-
+		this.vida - vida;
 	}
 	public void addVida(){
-
+		vida = vida + 1;
 	}
 	public void addVida(int vida){
-
+		this.vida + vida;
 	}
 }
 
