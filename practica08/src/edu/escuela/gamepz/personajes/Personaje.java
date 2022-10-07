@@ -9,10 +9,8 @@ public class Personaje{
 		this.vida = vida;
 	}
 
-	public Personaje(String nombre, int vida){
-		this.nombre = nombre;
-		this(vida,3)
-
+	public Personaje(int vida){
+		this.vida = 3;
 	}
 
 
@@ -20,7 +18,7 @@ public class Personaje{
 		int length = nombre.length();
 		if (length>5 && length<25){
 		this.nombre = nombre;
-		setvida(vida);
+		setVida(vida);
 	}
 
 	}
@@ -50,13 +48,13 @@ public class Personaje{
 		vida = vida - 1;
 	}
 	public void decVida(int vida){
-		this.vida - vida;
+		this.vida -= vida;
 	}
 	public void addVida(){
 		vida = vida + 1;
 	}
 	public void addVida(int vida){
-		this.vida + vida;
+		this.vida += vida;
 	}
 }
 

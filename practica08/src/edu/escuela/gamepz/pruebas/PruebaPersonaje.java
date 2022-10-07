@@ -21,9 +21,9 @@ public class PruebaPersonaje{
 		Personaje per10 = per01;
 
 		int n = ((int)(Math.random()*100));
-		per07.setEdad(n);
+		per07.setVida(n);
 		n = ((int)(Math.random()*100));
-		per09.setEdad(n);
+		per09.setVida(n);
 
 		per06.setNombre("Francisco Xavier Zepeda Flores");
 		per08.setNombre("Dayana");
