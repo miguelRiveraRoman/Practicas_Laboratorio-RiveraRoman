@@ -1,3 +1,5 @@
+package mx.desasof.casas;
+
 public class Campo extends Casa{
 
 	private float piscina[] = new float[1];

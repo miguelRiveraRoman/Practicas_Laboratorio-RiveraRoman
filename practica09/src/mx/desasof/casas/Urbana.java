@@ -1,3 +1,5 @@
+package mx.desasof.casas;
+
 public class Urbana extends Casa{
 
 	int banos;

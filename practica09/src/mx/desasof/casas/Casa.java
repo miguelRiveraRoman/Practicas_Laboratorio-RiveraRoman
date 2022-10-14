@@ -1,3 +1,5 @@
+package mx.desasof.casas;
+
 public class Casa{
 	private String tipo;
 	private int habitaciones;
@@ -14,8 +16,9 @@ public class Casa{
 		costo = 2000000;
 	}
 
-	public int hashCode(){
-		return ((int) tipo.hashCode() + tipo*habitaciones*costo);
+	public int hashCode(Object o){
+		Casa p = (Casa) o;	
+		return ((int)tipo.hashCode() + tipo*habitaciones*costo);
 	}
 
 	public boolean equals(Object o){
