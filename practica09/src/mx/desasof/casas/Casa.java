@@ -16,9 +16,8 @@ public class Casa{
 		costo = 2000000;
 	}
 
-	public int hashCode(Object o){
-		Casa p = (Casa) o;	
-		return ((int)tipo.hashCode() + tipo*habitaciones*costo);
+	public int hashCode(){
+		return tipo.hashCode()*habitaciones*(int)costo;
 	}
 
 	public boolean equals(Object o){
@@ -30,5 +29,9 @@ public class Casa{
 		  }  
 		}
 		return false;
+	}
+
+	public String toString(){
+		
 	}
 }

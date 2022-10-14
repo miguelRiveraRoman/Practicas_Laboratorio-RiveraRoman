@@ -14,7 +14,7 @@ public class Urbana extends Casa{
 	}
 
 	public int hashCode(){
-		return(int)*banos*23 super.hashCode()
+		return(int)+ banos*23; super.hashCode();
 	}
 
 	public boolean equals(Object ob){
