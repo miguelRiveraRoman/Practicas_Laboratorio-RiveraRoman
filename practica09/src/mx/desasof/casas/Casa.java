@@ -32,6 +32,7 @@ public class Casa{
 	}
 
 	public String toString(){
-		
+
+		return "Tipo: " +tipo+"\n"+ " Habitaciones: "+ habitaciones+"\n"+"Costo: "+costo;
 	}
 }

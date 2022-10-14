@@ -2,9 +2,9 @@ package mx.desasof.casas;
 
 public class Campo extends Casa{
 
-	private float[] piscina = new float[2];
+	private float[] piscina = new float[1];
 
-	public Campo(String tipo, int habitaciones, float costo, float piscina){
+	public Campo(String tipo, int habitaciones, float costo, float ancho, float largo){
 		super(tipo, habitaciones, costo);
 		piscina[0] = ancho;
 		piscina[1] = largo;
@@ -24,6 +24,6 @@ public class Campo extends Casa{
 	}
 
 	public String toString(){
-		return "Tipo: " +tipo+"\n"+ " Habitaciones: "+ habitaciones+"\n"+"Costo: "+costo;
+		return super.toString();
 	}
 }
