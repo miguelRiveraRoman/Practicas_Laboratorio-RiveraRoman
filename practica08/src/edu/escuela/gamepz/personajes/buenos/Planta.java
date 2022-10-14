@@ -3,12 +3,12 @@ public class Planta extends Personaje{
 
 
 	public Planta(String nombre, int vida, char escudo){
-		super(nombre,vida);
+		super(nombre,vida); 
 		this.escudo = escudo; 
 	}
 	public Planta(String nombre, char escudo){
 		super(nombre);
-
+		this.escudo = escudo;
 	}
 	public Planta(String nombre, int vida){
 		super(nombre,vida);
@@ -27,7 +27,7 @@ public class Planta extends Personaje{
 
 	public int decVida(char escudo){
 		super.decVida(){
-			if (escudo = "A") {
+			if (escudo == "A") {
 				vida = vida*2
 			}
 		}
