@@ -14,15 +14,15 @@ public class Casa{
 		costo = 2000000;
 	}
 
-	public int hasCode(){
-		return nombre.hasCode()
+	public int hashCode(){
+		return(int)*tipo*habitaciones*costo nombre.hasCode()
 	}
 
 	public boolean equals(Object o){
-		if (o != null && o instanceof Perrito ) {
-			Perrito p = (Perrito) o;
+		if (o != null && o instanceof Casa) {
+			Casa p = (Casa) o;
 
-			if (nombre.equals(p.nombre) && (edad == p.edad) ) {
+			if (nombre.equals(p.tipo) && (habitaciones == p.habitaciones) ) {
 		  		return true;
 		  }  
 		}
