@@ -15,14 +15,14 @@ public class Casa{
 	}
 
 	public int hashCode(){
-		return(int)*tipo*habitaciones*costo nombre.hashCode()
+		return ((int) tipo.hashCode() + tipo*habitaciones*costo);
 	}
 
 	public boolean equals(Object o){
 		if (o != null && o instanceof Casa) {
 			Casa p = (Casa) o;
 
-			if (nombre.equals(p.tipo) && (habitaciones == p.habitaciones) ) {
+			if (tipo.equals(p.tipo) && (costo == p.costo) ) {
 		  		return true;
 		  }  
 		}
