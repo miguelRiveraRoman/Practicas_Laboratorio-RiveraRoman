@@ -15,7 +15,7 @@ public class Casa{
 	}
 
 	public int hashCode(){
-		return(int)*tipo*habitaciones*costo nombre.hasCode()
+		return(int)*tipo*habitaciones*costo nombre.hashCode()
 	}
 
 	public boolean equals(Object o){

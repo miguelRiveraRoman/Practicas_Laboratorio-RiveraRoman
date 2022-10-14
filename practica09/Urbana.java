@@ -12,11 +12,11 @@ public class Urbana extends Casa{
 	}
 
 	public int hashCode(){
-
+		return(int)*banos*23 super.hashCode()
 	}
 
-	public boolean equals(){
-
+	public boolean equals(Object ob){
+		return super.equals(ob) && ob instanceof Urbana && banos == ((Urbana) ob ).banos;
 	}
 
 	public String toString(){
