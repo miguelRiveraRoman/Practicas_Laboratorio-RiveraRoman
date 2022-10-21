@@ -1,4 +1,6 @@
-
+package mx.gob.zacatecas.enumerados.equipos;
+import mx.gob.zacatecas.enumerados.utilerias.Memoria;
+import mx.gob.zacatecas.enumerados.utilerias.Tipo;
 
 public class Smallfactor extends Computadora{
 	private boolean nvram;

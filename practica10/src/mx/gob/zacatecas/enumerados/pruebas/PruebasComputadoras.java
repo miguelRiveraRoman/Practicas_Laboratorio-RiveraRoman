@@ -5,5 +5,8 @@ public class PruebasComputadoras{
 		Computadora msi = new Computadora("msi",182.4,); 
 		Computadora asus = new Computadora("aus",171.6,);
 
+		
+
+
 	}
 }
