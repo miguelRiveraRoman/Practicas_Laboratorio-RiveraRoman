@@ -1,8 +1,9 @@
 public enum Tipo{
 
-	SERVER "Servidor"
-	WORKSTATION "Estacion de trabajo"
-	DESKTOP
-	LAPTOP
+	SERVER(type: "Servidor") 
+	WORKSTATION(type: "Estacion de trabajo") 
+	DESKTOP(type: "Escritorio")
+	LAPTOP(type: "Portatil")
+	
 
 	}
