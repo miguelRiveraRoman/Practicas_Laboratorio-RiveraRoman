@@ -3,12 +3,12 @@ package mx.gob.zacatecas.enumerados.utilerias;
 
 public enum Tipo{
 
-	SERVER(type: "Servidor"),
-	WORKSTATION(type: "Estacion de trabajo"), 
-	DESKTOP(type: "Escritorio"),
-	LAPTOP(type: "Portatil");
+	SERVER("Servidor"),
+	WORKSTATION("Estacion de trabajo"), 
+	DESKTOP("Escritorio"),
+	LAPTOP("Portatil");
 
-	private final String type:
+	private final String type;
 
 	private Tipo(String type){
 		this.type = type;

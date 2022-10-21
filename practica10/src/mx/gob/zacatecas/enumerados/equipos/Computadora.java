@@ -5,7 +5,7 @@ import mx.gob.zacatecas.enumerados.utilerias.Tipo;
 public class Computadora{
 	private String marca;
 	private Tipo tipo;
-
+	private Memoria memoria;
 
 	public Computadora(String marca, Tipo tipo, Memoria memoria){
 	
