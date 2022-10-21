@@ -1,3 +1,6 @@
+
+
+
 public class Computadora{
 	private String marca;
 	private Tipo tipo;
@@ -13,5 +16,6 @@ public class Computadora{
 	public String toString(){
 		return marca + "\n" + tipo + "\n" + velocidad + "\n" + pines + "\n" + type;
 	}
+	
 
 }
