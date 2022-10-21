@@ -10,9 +10,8 @@ public class Smallfactor extends Computadora{
 		this.nvram = nvram;
 	}
 
-
 	public String toString(){
-		return marca + "\n" + tipo + "\n" + velocidad + "\n" + pines + "\n" + type;
+		return super.toString() + "\n"+ nvram;
 	}
 
 }

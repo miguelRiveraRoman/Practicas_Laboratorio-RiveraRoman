@@ -15,7 +15,7 @@ public class Computadora{
 	}
 
 	public String toString(){
-		return marca + "\n" + tipo + "\n" + velocidad + "\n" + pines + "\n" + type;
+		return marca + "\n" + tipo.getTipo() + "\n" + velocidad.getVelocidad() + "\n" + pines.getPines() + "\n" + type.getType();
 	}
 
 

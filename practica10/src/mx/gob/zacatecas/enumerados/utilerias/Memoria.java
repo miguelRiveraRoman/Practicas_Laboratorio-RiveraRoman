@@ -1,9 +1,9 @@
 public enum Memoria{
 
-	DDR(type: "Memoria Ram", velocidad: 166 , pines:30 ),
-	DDR2(type: "Laptop", velocidad:140 , pines:35 ),
-	DDR3(type: "Laptop Nueva",velocidad:533 , pines:40),
-	DDR4(type: "Gamer", velocidad:160 , pines:40);
+	DDR(tipo: "Memoria Ram", velocidad: 166 , pines:30),
+	DDR2(tipo: "Laptop", velocidad:140 , pines:35),
+	DDR3(tipo: "Laptop Nueva",velocidad:533 , pines:40),
+	DDR4(tipo: "Gamer", velocidad:160 , pines:40);
 
 
 
