@@ -5,7 +5,15 @@ public enum Tipo{
 	DESKTOP(type: "Escritorio")
 	LAPTOP(type: "Portatil")
 
-	String type:
-	
+	private final String type:
+
+	private Tipo(String type){
+		this.type = type;
+	}
+
+	public String getType(){
+		return type;
+	}
+
 
 	}

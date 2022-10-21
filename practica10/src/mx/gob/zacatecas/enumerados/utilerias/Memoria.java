@@ -1,9 +1,9 @@
 public enum Memoria{
 
-	DDR(type: "Servidor"),
-	DDR2(type: "Estacion de trabajo"),
-	DDR3(type: "Escritorio"),
-	DDR4(type: "Portatil");
+	DDR(type: "Memoria Ram", velocidad: 166 , pines:30 ),
+	DDR2(type: "Laptop", velocidad:140 , pines:35 ),
+	DDR3(type: "Laptop Nueva",velocidad:533 , pines:40),
+	DDR4(type: "Gamer", velocidad:160 , pines:40);
 
 
 
@@ -26,7 +26,8 @@ public enum Memoria{
 		return velocidad;
 	}
 
-	public int pines(){
+	public int getPines(){
 		return pines;
 	}
+
 }
