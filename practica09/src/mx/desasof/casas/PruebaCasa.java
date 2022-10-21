@@ -10,5 +10,8 @@ public class PruebaCasa{
 		new Casa("Estandar",); 
 		new Campo("Cazador",4,15000,3f,5f); 
 		new Urbano("Residencia",5);
+
+		
+
 	}
 }
