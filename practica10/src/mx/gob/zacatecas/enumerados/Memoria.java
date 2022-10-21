@@ -5,9 +5,9 @@ public enum Memoria{
 	DDR3(type: "Escritorio")
 	DDR4(type: "Portatil")
 
-	private final String marca;
-	private Tipo tipo;
-	private  
+	private final String tipo;
+	private final float velocidad;
+	private final int pines;
 
 
 	}
