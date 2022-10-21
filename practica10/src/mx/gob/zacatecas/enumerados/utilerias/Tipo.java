@@ -1,3 +1,6 @@
+package mx.gob.zacatecas.enumerados.utilerias;
+
+
 public enum Tipo{
 
 	SERVER(type: "Servidor"),
@@ -16,4 +19,4 @@ public enum Tipo{
 	}
 
 
-	}
+}
