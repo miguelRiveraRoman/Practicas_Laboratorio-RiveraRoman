@@ -13,7 +13,20 @@ public enum Memoria{
 
 
 	public Memoria(String tipo, float velocidad, int pines){
-
+		this.tipo = tipo;
+		this.velocidad = velocidad;
+		this.pines = pines;
 	}
 
+	public String getTipo(){
+	return tipo;
 	}
+
+	public float getVelocidad(){
+		return velocidad;
+	}
+
+	public int pines(){
+		return pines;
+	}
+}

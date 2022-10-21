@@ -4,6 +4,8 @@ public enum Tipo{
 	WORKSTATION(type: "Estacion de trabajo") 
 	DESKTOP(type: "Escritorio")
 	LAPTOP(type: "Portatil")
+
+	String type:
 	
 
 	}
