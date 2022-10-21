@@ -13,5 +13,4 @@ public class Smallfactor extends Computadora{
 		return marca + "\n" + tipo + "\n" + velocidad + "\n" + pines + "\n" + type;
 	}
 
-
 }

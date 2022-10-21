@@ -1,4 +1,4 @@
-
+package mx.gob.zacatecas.enumerados.equipos;
 
 
 public class Computadora{
@@ -16,6 +16,6 @@ public class Computadora{
 	public String toString(){
 		return marca + "\n" + tipo + "\n" + velocidad + "\n" + pines + "\n" + type;
 	}
-	
+
 
 }
