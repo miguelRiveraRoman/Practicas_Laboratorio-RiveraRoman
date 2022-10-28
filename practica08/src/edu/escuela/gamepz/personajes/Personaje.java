@@ -1,19 +1,41 @@
+package edu.escuela.gamepz.personajes; 
+public class Personaje{	
 
+	private int vida;
+	private String nombre;
 
+	public Personaje(String nombre, int vida){
+		this.nombre = nombre;
+		this.vida = vida;
+	}
+	public Personaje(String nombre){
+		this(nombre,3);
+	}
 
+	public void setNombre(String nombre){
+		int length = nombre.length();
+		if(length > 5 && length < 25){
 
+		}
+	}
 
+	public boolean setVida(int vida){
+		if (vida > 0 && vida < 99){
+			this.vida = vida;
+			return true;
+		}else{
+			return false;
+		}
+	}
+	public String getNombre(){
+		return nombre;
+	}
+	public int getVida(){
+		return vida;
+	}
 
+	public
 
-
-
-
-
-
-	
-		
-		
-			
 			this.vida += vida;
 			this.vida -= vida;
 			this.vida = vida;
@@ -40,11 +62,7 @@
 		}
 		}
 		}
-	private int vida;
-	private String nombre;
 	public int getVida(){
-	public Personaje(String nombre){
-	public Personaje(String nombre, int vida){
 	public String getDetalle(){
 	public String getNombre(){
 	public void addVida(){
@@ -67,6 +85,5 @@
 	}
 //java -cp ..\classes edu\escuela\gamepz\pruebas\PruebaPersonaje 
 //javac -d ../classes edu/escuela/gamepz/pruebas/PruebaPersonaje.java
-package edu.escuela.gamepz.personajes; 
-public class Personaje{
+
 }
