@@ -17,12 +17,12 @@ public class Planta extends Personaje {
 
     public Planta (String nombre, int vida){
         super(nombre,vida);
-        this.escudo = 'A';
+        this.escudo = Escudo.NULO;
     }
 
     public Planta (String nombre){
         super(nombre,3);
-        this.escudo = 'A';
+        this.escudo = Escudo.NULO;
     }
 
     public char getEscudo(){
@@ -33,9 +33,9 @@ public class Planta extends Personaje {
         return super.toString() + "\n" + escudo;
     }
     public void decVida(){
-        if (escudo == 'A') {
+        if (!escudo == 'A') {
 
-            super.decVida(1*2);
+            super.decVida((1*2)-(Escudo.NULO));
 
         }else{
 
@@ -43,9 +43,9 @@ public class Planta extends Personaje {
         }
     }
     public void decVida(int di2){
-        if (escudo == 'A') {
+        if (!escudo == 'A') {
 
-            super.decVida(di2 * 2);
+            super.decVida((di2 * 2)-(Escudo.NULO));
 
         }else{
             super.decVida(di2);
@@ -54,9 +54,9 @@ public class Planta extends Personaje {
 
     public void addVida(){
 
-        if (escudo == 'A') {
+        if (!escudo == 'A') {
 
-            super.addVida(1 *2);
+            super.addVida((1*2)+(Escudo.NULO));
 
         }else{
 
@@ -66,9 +66,9 @@ public class Planta extends Personaje {
 
     public void addVida(int ac2){
 
-        if (escudo == 'A') {
+        if (!escudo == 'A') {
 
-            super.addVida(ac2*2);
+            super.addVida((ac2*2)+(Escudo.NULO));
 
         }else{
 
