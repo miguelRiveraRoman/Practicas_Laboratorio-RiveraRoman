@@ -3,7 +3,7 @@ import edu.escuela.gamepz.personajes.*;
 
 public class Planta extends Personaje {
 
-    private char escudo;
+    private Escudo escudo;
 
     public Planta (String nombre, int vida, char escudo){
         super(nombre,vida);
