@@ -13,13 +13,15 @@ public class Tablero{
 		
 		for (int c=0; c<MAX_SIZE; c += 1 ) {
 
-		if (personajes[c] == null) {
-			System.out.println(personajes + "---");
+			if (personajes[c] == null) {
+				System.out.println(personajes[c] + "---");
 
-		}		
-		
-	}
-
+				}		
+			else{
+				System.out.println(personajes[c]);
+				}	
+			}
+		System.out.println("Fin *** Contenido del arreglo en Tablero \n");
 	} 
 
 }
