@@ -41,6 +41,8 @@ public class Tablero{
 			if (personajes[pos] == null) {
 				throw new PersException("Si personaje para borrar",pos);
 			}
+
+			personajes[pos] = null;
 	}
 
 }
