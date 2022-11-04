@@ -4,7 +4,7 @@ import edu.escuela.gamepz.personajes.*;
 public class Tablero{
 
 	public static final int MAX_SIZE = 10;
-	public static final Personaje[] personajes = new Personaje[MAX_SIZE];
+	private static Personaje[] personajes = new Personaje[MAX_SIZE];
 
 	private Tablero(int MAX_SIZE){}
 
@@ -28,9 +28,8 @@ public class Tablero{
 		throws PersException{
 			if (pos < 0 || pos > MAX_SIZE) {
 			throw new PersException("Indice fuera de rango",pos);
-			}else{
-				personajes[pos] = p;
 			}
+			personajes[pos] = p;
 		}
 
 	public static void borrarT(int pos)
