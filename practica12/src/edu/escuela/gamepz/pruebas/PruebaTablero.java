@@ -18,5 +18,14 @@ public class PruebaTablero{
 			new Zombie ("Josseline",true),
 			new Zombie ("Eduardo")
 		};
+		for (Personaje p: datos) {
+			int pos = (Math.random()*20-5);
+			try{
+				Tablero.insertarT(p,pos);
+			} catch(Exception e){
+				System.out.println(e.instertarT()+" "+ datos[]);
+			}
+		}
+
 	}
 }
