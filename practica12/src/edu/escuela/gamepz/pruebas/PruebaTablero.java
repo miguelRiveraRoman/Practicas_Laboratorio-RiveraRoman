@@ -19,13 +19,24 @@ public class PruebaTablero{
 			new Zombie ("Eduardo")
 		};
 		for (Personaje p: datos) {
-			int pos = (Math.random()*20-5);
+			
+			int pos = (int )(Math.random()*20-5);
 			try{
-				Tablero.insertarT(p,pos);
+				Tablero.instertarT(p,pos);
 			} catch(Exception e){
-				System.out.println(e.instertarT()+" "+ datos[]);
+				System.err.println(e.getMessage()+" "+ pos);
 			}
 		}
+		Tablero.mostrarT();
 
+		for (int i = 0; i < Tablero.MAX_SIZE ; i += 1 ) {
+			int pos = (int)(Math.random()*20-5);
+			try{
+				Tablero.borrarT(pos);
+			} catch(Exception e){
+				System.err.println(e.getMessage()+" "+pos);
+			}
+		}
+		Tablero.mostrarT();
 	}
 }
