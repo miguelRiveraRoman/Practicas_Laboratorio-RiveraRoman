@@ -24,4 +24,14 @@ public class Tablero{
 		System.out.println("Fin *** Contenido del arreglo en Tablero \n");
 	} 
 
+	public static void instertarT(Personaje p, int pos)
+		throws PersException{
+		if (pos < 0 || pos > MAX_SIZE) {
+			throw new PersException("Indice fuera de rango",pos);
+		}
+		if () {
+			
+		}
+
+	}
 }
