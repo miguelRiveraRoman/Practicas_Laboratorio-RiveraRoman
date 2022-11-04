@@ -1,78 +1,42 @@
 package edu.escuela.gamepz.personajes.buenos;
 import edu.escuela.gamepz.personajes.*;
+import edu.escuela.gamepz.utils.*;
 
 public class Planta extends Personaje {
-
     private Escudo escudo;
-
-    public Planta (String nombre, int vida, char escudo){
+    public Planta (String nombre, int vida, Escudo escudo){
         super(nombre,vida);
         this.escudo = escudo;
     }
-
-    public Planta (String nombre, char escudo){
+    public Planta (String nombre, Escudo escudo){
         super(nombre,3);
         this.escudo = escudo;
     }
-
     public Planta (String nombre, int vida){
         super(nombre,vida);
         this.escudo = Escudo.NULO;
     }
-
     public Planta (String nombre){
         super(nombre,3);
         this.escudo = Escudo.NULO;
     }
-
-    public char getEscudo(){
+    public Escudo getEscudo(){
         return escudo;
     }
     public String toString(){
-
-        return super.toString() + "\n" + escudo;
+        return super.toString() + " " + escudo.getNivel();
     }
     public void decVida(){
-        if (!escudo == 'A') {
-
-            super.decVida((1*2)-(Escudo.NULO));
-
-        }else{
-
-            super.decVida();
-        }
+        setVida(vida-escudo.getNivel());
     }
-    public void decVida(int di2){
-        if (!escudo == 'A') {
-
-            super.decVida((di2 * 2)-(Escudo.NULO));
-
-        }else{
-            super.decVida(di2);
-        }
+    public void decVida(int d2){
+        setVida(vida-escudo.getNivel()*d2);
     }
-
     public void addVida(){
-
-        if (!escudo == 'A') {
-
-            super.addVida((1*2)+(Escudo.NULO));
-
-        }else{
-
-            super.addVida();
-        }
+        setVida(vida+escudo.getNivel());
+    }
+    public void addVida(int a2){
+        setVida(vida+escudo.getNivel()*a2);
     }
 
-    public void addVida(int ac2){
-
-        if (!escudo == 'A') {
-
-            super.addVida((ac2*2)+(Escudo.NULO));
-
-        }else{
-
-            super.addVida(ac2);
-        }
-    }
 }
