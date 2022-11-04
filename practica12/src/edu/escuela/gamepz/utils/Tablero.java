@@ -26,12 +26,21 @@ public class Tablero{
 
 	public static void instertarT(Personaje p, int pos)
 		throws PersException{
-		if (pos < 0 || pos > MAX_SIZE) {
+			if (pos < 0 || pos > MAX_SIZE) {
 			throw new PersException("Indice fuera de rango",pos);
-		}
-		if () {
-			
+			}else{
+				personajes[pos] = p;
+			}
 		}
 
+	public static void borrarT(int pos)
+		throws PersException{
+			if (pos < 0 || pos > MAX_SIZE) {
+				throw new PersException("Indice fuera de rango",pos);
+			}
+			if (personajes[pos] == null) {
+				throw new PersException("Si personaje para borrar",pos);
+			}
 	}
+
 }
