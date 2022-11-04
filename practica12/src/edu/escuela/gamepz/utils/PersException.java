@@ -1,4 +1,4 @@
-package edu.escuela.gamepz.personajes.utils;
+package edu.escuela.gamepz.utils;
 
 public class PersException extends Exception{
 	private String msg;
