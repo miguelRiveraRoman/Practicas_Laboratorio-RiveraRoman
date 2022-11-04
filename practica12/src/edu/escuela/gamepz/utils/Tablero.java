@@ -10,5 +10,16 @@ public class Tablero{
 
 	public static void mostrarT(){
 		System.out.println("\nInicio ***Contenido del areeglo en Tablero");
+		
+		for (int c=0; c<MAX_SIZE; c += 1 ) {
+
+		if (personajes[c] == null) {
+			System.out.println(personajes + "---");
+
+		}		
+		
+	}
+
 	} 
+
 }
