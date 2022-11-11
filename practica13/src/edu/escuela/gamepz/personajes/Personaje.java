@@ -1,6 +1,6 @@
 package edu.escuela.gamepz.personajes; 
 
-public abstract class Personaje{
+public abstract class Personaje implements Comparable<Caricatura>{
 	private String nombre;
 	protected int vida;
 	private float size;
@@ -21,6 +21,20 @@ public abstract class Personaje{
 	public Personaje(String nombre, float size){
 		this(nombre,3);
 		size = 0.0f
+	}
+
+	public float compareTo(Personaje o){
+		if (this.nombre.compareTo(o.nombre) != 0){
+			return (this.nombre.compareTo(o.nombre));
+		}
+		if (this.vida != o.vida) {
+			return this.hora - o.hora;
+			
+		}
+		if (this.size == o.size) {
+			return 0;
+		}
+		return (o.size < this.size) ? -1 : 1;
 	}
 	public void setNombre(String nombre){
 		int length = nombre.length();
@@ -43,9 +57,12 @@ public abstract class Personaje{
 	public int getVida(){
 		return vida;
 	}
+	public float getSize(){
+		return size;
+	}
 
 	public String toString(){
-		return nombre + " " + vida;
+		return "nombre = " + nombre + "\t vida = " + vida + "\t size = " + size;
 	}
 
 	public float genSize(){
