@@ -5,13 +5,22 @@ public abstract class Personaje{
 	protected int vida;
 	private float size;
 	
-	public Personaje (String nombre, int vida){
+	public Personaje (String nombre, int vida, float size){
 	this.nombre = nombre;
 	this.vida = vida;
+	this.size = size;
+
+	if(size == 00.0f){
+		this.size = genSize();
+	} else {
+		this.size = Math.round(size)/100;
 	}
 
-	public Personaje(String nombre){
+	}
+
+	public Personaje(String nombre, float size){
 		this(nombre,3);
+		size = 0.0f
 	}
 	public void setNombre(String nombre){
 		int length = nombre.length();
