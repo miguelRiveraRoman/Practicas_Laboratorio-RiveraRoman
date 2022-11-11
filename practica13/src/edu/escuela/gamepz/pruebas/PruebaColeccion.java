@@ -6,6 +6,7 @@ import edu.escuela.gamepz.utils.*;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.TreeSet;
+import java.util.ArrayList;
 
 public class PruebaColeccion{
 	public static void main(String[] args) {
@@ -25,11 +26,13 @@ public class PruebaColeccion{
 		};
 
 		TreeSet<Personaje> arbol = new TreeSet <>();
+		LinkedList<Personaje> lista = new LinkedList<Personaje>();
 
-		for(Personaje datos : arbol){
-			arbol.add(datos);
+		for(Personaje p : arbol){
+			arbol.add(p);
 
 		}
+		lista.addAll(arbol);
 
 		System.out.println("---Orden Natural---");
 		for(Personaje p : arbol){
@@ -40,7 +43,7 @@ public class PruebaColeccion{
 		for(Personaje p:lista){
 			System.out.println(p);
 		}
-		ArrayList arr = new ArrayList();
+		ArrayList<Personaje> arr = new ArrayList<Personaje>();
 		arr.addAll(lista);
 		System.out.println("---Orden Tamanio---");
 		Collections.sort(arr, new BySize());
