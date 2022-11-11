@@ -12,10 +12,10 @@ public class PruebaColeccion{
 		
 
 		Personaje[] datos = {
-			new Planta("Fabian",Tablero.genVida(),MEDIO),
+			new Planta("Fabian",Tablero.genVida(),Escudo.MEDIO),
 			new Planta("Bianca",Tablero.genVida()),
 			new Planta("Fabian",Tablero.genVida()),
-			new Planta("Armando",Tablero.genVida(),BAJO),
+			new Planta("Armando",Tablero.genVida(),Escudo.BAJO),
 			new Zombie("Bianca",Tablero.genVida()),
 			new Planta("Dayan",Tablero.genVida()),		
 			new Zombie("Armando",Tablero.genVida(),false),
@@ -24,11 +24,10 @@ public class PruebaColeccion{
 
 		};
 
-		TreeSet<Personaje> ts = new TreeSet <>();
+		TreeSet<Personaje> arbol = new TreeSet <>();
 
-		ts.add(datos);
-
-		for(Personaje datos : ts){
+		for(Personaje datos : arbol){
+			arbol.add(datos);
 
 		}
 
