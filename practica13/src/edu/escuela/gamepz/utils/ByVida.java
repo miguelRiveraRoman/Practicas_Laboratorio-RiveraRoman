@@ -11,6 +11,6 @@ public class ByVida implements Comparator<Personaje>{
 			return (p1.getNombre().compareTo(p2.getNombre()));
 		
 		 }
-		return (p2.getSize() > p1.getSize()) ? -1 : 1;
+		return (p2.genSize() > p1.genSize()) ? -1 : 1;
 	}
 }
