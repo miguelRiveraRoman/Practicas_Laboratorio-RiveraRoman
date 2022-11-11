@@ -1,6 +1,7 @@
 package edu.escuela.gamepz.personajes; 
+import java.text.DecimalFormat;
 
-public abstract class Personaje implements Comparable<Caricatura>{
+public abstract class Personaje implements Comparable<Personaje>{
 	private String nombre;
 	protected int vida;
 	private float size;
@@ -18,17 +19,16 @@ public abstract class Personaje implements Comparable<Caricatura>{
 
 	}
 
-	public Personaje(String nombre, float size){
-		this(nombre,3);
-		size = 0.0f
+	public Personaje (String nombre){
+		this(nombre,3,0.0f);
 	}
 
-	public float compareTo(Personaje o){
+	public int compareTo(Personaje o){
 		if (this.nombre.compareTo(o.nombre) != 0){
 			return (this.nombre.compareTo(o.nombre));
 		}
 		if (this.vida != o.vida) {
-			return this.hora - o.hora;
+			return this.vida - o.vida;
 			
 		}
 		if (this.size == o.size) {
