@@ -7,5 +7,8 @@ public class ByVida implements Comparator<Personaje>{
 		if (p1.getVida() != p2.getVida()){
 			return (p2.getVida() < p1.getVida()) ? -1 : 1;
 		}
+		if (p2.getVida() == p1.getVida()){
+			return (p1.getNombre().compareTo(p2.getNombre());
+		}
 	}
 }

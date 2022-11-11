@@ -45,7 +45,7 @@ public class Tablero{
 	}
 
 	public int genVida(){
-		return (int) (Math.random()*10);
+		return (int) (Math.random()*10+1);
 	}
 
 }
