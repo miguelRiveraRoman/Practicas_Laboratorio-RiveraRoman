@@ -58,8 +58,6 @@ public class PruebaColeccion{
 		}
 		lista.addAll(arbol);
 
-
-
 		System.out.println("---Orden Natural---");
 		for(Personaje p : arbol){
 			System.out.println(p);
@@ -81,7 +79,7 @@ public class PruebaColeccion{
 		public static void mostrarDirectorio(File f){
 			f.getPath();
 		}
-		public static void guardarObjetos(File f, Collections <Personaje> arbol){
+		public static void guardarObjetos(File f, TreeSet <Personaje> arbol){
 
 		};
 }
