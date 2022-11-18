@@ -76,11 +76,13 @@ public class PruebaColeccion{
 		for (Personaje p:arr){
 			System.out.println(p);
 		}
-		
+
 	}
 		public static void mostrarDirectorio(File f){
 			f.getPath();
 		}
-		public static void guardarObjetos(Collections<Personaje> arbol);
+		public static void guardarObjetos(File f, Collections <Personaje> arbol){
+
+		};
 }
 
