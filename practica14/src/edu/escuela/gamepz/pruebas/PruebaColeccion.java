@@ -27,10 +27,12 @@ public class PruebaColeccion{
 		
 		if (f.exists()){
 			System.out.println("El archivo o directorio si existe");
-			if( f.isDirectory()){
-			System.out.println("Es directorio");
+			return;
+		}
+		if( f.isDirectory()){
+			mostrarDirectorio(f);
 			String nuevo = path+System.getProperty("file.separator")+"nuevo";
-			} else {
+		} else {
 			System.out.println("Es archivo");
 			}
 		}
@@ -77,5 +79,8 @@ public class PruebaColeccion{
 			System.out.println(p);
 		}
 	}
+		public static void mostrarDirectorio(File f){
+		f.getPath();
+	}
 }
-}
+
