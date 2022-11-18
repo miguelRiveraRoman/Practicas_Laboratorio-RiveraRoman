@@ -8,11 +8,20 @@ import java.util.LinkedList;
 import java.util.TreeSet;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.io.File;
 
 public class PruebaColeccion{
 	public static void main(String[] args) {
 		private String path ("user.home"); 
-		Scanner fname = new scanner(System.in); 
+		Scanner s = new scanner(System.in); 
+		File file = new File(archivo);
+		
+
+		while (!linea.equals("exit")){
+			System.out.print("Escribe Algo: ");
+			fname = s.nextLine();
+			path = path.trim();
+			cadenas.add(path);
 
 		Personaje[] datos = {
 			new Planta("Fabian",Tablero.genVida(),Escudo.MEDIO),
@@ -35,6 +44,8 @@ public class PruebaColeccion{
 
 		}
 		lista.addAll(arbol);
+
+
 
 		System.out.println("---Orden Natural---");
 		for(Personaje p : arbol){
