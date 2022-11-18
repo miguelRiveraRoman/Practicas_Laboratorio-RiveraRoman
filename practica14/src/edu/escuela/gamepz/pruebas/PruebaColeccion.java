@@ -9,6 +9,8 @@ import java.util.TreeSet;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.File;
+import java.io.*;
+import java.util.Date;
 
 public class PruebaColeccion{
 	public static void main(String[] args) {
@@ -77,7 +79,9 @@ public class PruebaColeccion{
 
 	}
 		public static void mostrarDirectorio(File f){
-			f.getPath();
+			for (String i : f.List()) {
+				System.out.println(i);
+			}
 		}
 		public static void guardarObjetos(File f, TreeSet <Personaje> arbol){
 
