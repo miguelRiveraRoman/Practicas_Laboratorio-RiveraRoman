@@ -24,18 +24,16 @@ public class PruebaColeccion{
 			fname = s.nextLine();
 			fname = fname.trim();
 			cadenas.add(fname);
-		
+		}
 		if (f.exists()){
 			System.out.println("El archivo o directorio si existe");
 			return;
 		}
 		if( f.isDirectory()){
 			mostrarDirectorio(f);
-			String nuevo = path+System.getProperty("file.separator")+"nuevo";
-		} else {
-			System.out.println("Es archivo");
-			}
+			return;
 		}
+		
 
 
 		Personaje[] datos = {
@@ -78,9 +76,11 @@ public class PruebaColeccion{
 		for (Personaje p:arr){
 			System.out.println(p);
 		}
+		
 	}
 		public static void mostrarDirectorio(File f){
-		f.getPath();
-	}
+			f.getPath();
+		}
+		public static void guardarObjetos(Collections<Personaje> arbol);
 }
 
