@@ -13,8 +13,10 @@ import java.io.File;
 public class PruebaColeccion{
 	public static void main(String[] args) {
 		String path = System.getProperty("user.home"); 
-		Scanner s = new scanner(System.in); 
+		Scanner s = new Scanner(System.in);
+		String fname = ""; 
 		File f = new File(path);
+		ArrayList<String> cadenas = new ArrayList<String>();
 		String su = fname + path;
 
 		while (!path.equals("exit")){
