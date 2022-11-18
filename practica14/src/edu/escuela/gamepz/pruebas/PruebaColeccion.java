@@ -12,16 +12,27 @@ import java.io.File;
 
 public class PruebaColeccion{
 	public static void main(String[] args) {
-		private String path ("user.home"); 
+		String path = System.getProperty("user.home"); 
 		Scanner s = new scanner(System.in); 
-		File file = new File(archivo);
-		
+		File f = new File(path);
+		String su = fname + path;
 
-		while (!linea.equals("exit")){
+		while (!path.equals("exit")){
 			System.out.print("Escribe Algo: ");
 			fname = s.nextLine();
-			path = path.trim();
-			cadenas.add(path);
+			fname = fname.trim();
+			cadenas.add(fname);
+		
+		if (f.exists()){
+			System.out.println("El archivo o directorio si existe");
+			if( f.isDirectory()){
+			System.out.println("Es directorio");
+			String nuevo = path+System.getProperty("file.separator")+"nuevo";
+			} else {
+			System.out.println("Es archivo");
+			}
+		}
+
 
 		Personaje[] datos = {
 			new Planta("Fabian",Tablero.genVida(),Escudo.MEDIO),
@@ -64,4 +75,5 @@ public class PruebaColeccion{
 			System.out.println(p);
 		}
 	}
+}
 }
