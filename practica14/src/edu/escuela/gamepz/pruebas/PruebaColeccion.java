@@ -31,8 +31,8 @@ public class PruebaColeccion{
 			System.out.println("El archivo o directorio si existe");
 			return;
 		}
-		if( f.isDirectory()){
-			mostrarDirectorio(f);
+		if( f.isFile()){
+			mostrarFile(f);
 			return;
 		}
 		
@@ -79,7 +79,7 @@ public class PruebaColeccion{
 
 	}
 		public static void mostrarDirectorio(File f){
-			for (String i : f.List()) {
+			for (String i : f.list()) {
 				System.out.println(i);
 			}
 		}
