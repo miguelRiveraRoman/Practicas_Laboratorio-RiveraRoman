@@ -24,5 +24,5 @@ public class Vehiculo {
 		return marca +"\t"+modelo+"\t "+costo"\t";
 	}
 
-	.
+	
 }

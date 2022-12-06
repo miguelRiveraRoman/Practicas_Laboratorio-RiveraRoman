@@ -1,3 +1,7 @@
 public class Terrestre extends Vehiculo{
-	int llantas;
+	private int llantas;
+
+	public String toString(){
+		return super.toString()+" "llantas;
+	}
 }
