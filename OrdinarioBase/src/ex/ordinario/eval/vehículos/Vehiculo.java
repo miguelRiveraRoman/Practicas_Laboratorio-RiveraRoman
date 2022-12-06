@@ -5,7 +5,7 @@ public class Vehiculo {
 	private String marca;
 	private int modelo;
 	private float costo;
-	private Vehiculo[] arrayVehiculo = new Vehiculo[String marca,int modelo,float costo];
+	private Vehiculo[] arrayVehiculo = new Vehiculo[marca,modelo,costo];
 	public Vehiculo(String marca, int modelo, float costo){
 		this.marca = marca;
 		this.modelos = modelo;
