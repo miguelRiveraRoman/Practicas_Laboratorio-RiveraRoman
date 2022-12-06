@@ -1,8 +1,11 @@
+package ex.ordinario.eval.vehiculos;
+import java.util.Array; 
+
 public class Vehiculo {
 	private String marca;
 	private int modelo;
 	private float costo;
-
+	private Vehiculo[] arrayVehiculo = new Vehiculo[String marca,int modelo,float costo];
 	public Vehiculo(String marca, int modelo, float costo){
 		this.marca = marca;
 		this.modelos = modelo;
@@ -21,8 +24,6 @@ public class Vehiculo {
 
 
 	public String toString(){
-		return marca +"\t"+modelo+"\t "+costo"\t";
+		return marca +"\t"+modelo+"\t "+costo+"\t";
 	}
-.
-
 }
