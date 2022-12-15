@@ -1,4 +1,18 @@
+package mx.edu.elextra.extraeval.ventanas;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+import java.awt.FlowLayout;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import mx.edu.elextra.extraeval.acciones;
+
 public class Ventana extends JFrame{
+
 	public Ventana(){
 		initComponents();
 		setJMenuBar(mb);
@@ -30,22 +44,27 @@ public class Ventana extends JFrame{
 
 		// Crear la Barra de Menú mb
 		setJMenuBar(mb);
-		menu = new JMenu("");
+		menu = new JMenu("Ordenar por ...");
 		mb.add(menu);
 
-		miMarca = new JMenu
 		// Crear el Menú mnFile "Archivo"
+		mnFile = new JMenu("Archivo");		
 		// Crear el Menú Item miOpen "Abrir"
+		miopen = new JMenuItem("Abrir");		
 		// Agregar al miOpen la clase anónima que manda llamar a los métodos siguientes: 
 				Procesos.openFile();
 				Procesos.getPrev(txMarca, txCosto, txRamP, lbIdx);
 		//
 		// Crear el Menú Item miOpen "Salir"
+		miSalir = new JMenuItem("Salir");				
 		// Agregar al miOpen la clase anónima que manda llamar al método siguientes:
 				dispose();
 		// Crear el menú mnSort "Ordenar por ..."
+
 		// Crear el Menú Item miMarca "Marca"
+		miMarca = new JMenuItem("Marca");				
 		// Crear el Menú Item miCosto "Costo"
+		miCosto = new JMenuItem("Costo");
 
 		// Crear la etiqueta lbMarca "Marca"
 		lbMarca = new JLabel("Marca");

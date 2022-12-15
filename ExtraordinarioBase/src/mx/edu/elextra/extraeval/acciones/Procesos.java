@@ -1,8 +1,19 @@
 package mx.edu.elextra.extraeval.acciones;
+import java.util.ArrayList;
+import javax.swing.JFrame;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+import mx.edu.elextra.extraeval.dispositivos.Celular;
+import mx.edu.elextra.extraeval.dispositivos.Computadora;
+import mx.edu.elextra.extraeval.dispositivos.Dispositivos;
 
 public class Procesos{
 	// ArrayList que almacena Dispositivos
 	private int idx = 0; //indice para moverse en el ArrayList
+
+	ArrayList<Dispositivo> lista = new ArrayList<Dispositivo>();
+	PorMarca sortmarca;
+	PorCosto sortcosto;
 	
 	private Procesos(){}
 
@@ -10,6 +21,9 @@ public class Procesos{
 		// Si el tamaño de la lista es 0 llamar a JOptionPane siguiente y terminar el método
 		JOptionPane.showMessageDialog(null, "Lista vacia");
 		// restar a idx 1; en caso de ser 0 no realizar la resta
+		if (JOptionPane.showMessageDialog() != 0) {
+			return --1
+		}
 		// establecer la etiqueta del indice en el valor que corresponda; ejemplo 1/20
 		llenarCampos(marca, costo, ramP);
 	}
@@ -28,10 +42,19 @@ public class Procesos{
 	public void sortMarca(){
 		// Si la lista está vacía, no se ordena
 		// Ordenar por Marca
+		for (Vehiculo vehiculo1 : lista) {
+			for (Vehiculo vehiculo2 : lista) {
+				sortmarca.compare(vehiculo1, vehiculo2);
+			}		
 	}
 	public void sortCosto(){
 		// Si la lista está vacía, no se ordena
 		// Ordenar por Marca
+		for (Vehiculo vehiculo1 : lista) {
+			for (Vehiculo vehiculo2 : lista) {
+				sortcosto.compare(vehiculo1, vehiculo2);
+			}
+		}		
 	}
 	public void openFile(){
 		System.out.println("Nombre del archivo:");
