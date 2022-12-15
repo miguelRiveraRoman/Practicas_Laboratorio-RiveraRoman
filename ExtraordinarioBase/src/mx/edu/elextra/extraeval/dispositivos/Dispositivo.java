@@ -1,14 +1,32 @@
-public class Dispositivo {
+package mx.edu.elextra.extraeval.dispositivos;
+
+public class Dispositivo implements Comparable<Dispositivo> {
 
 	private String marca;
 	private float costo;
 
-	public Dispositivo(String marca float costo){
+	public Dispositivo(String marca, float costo){
 		this.marca = marca;
 		this.costo = costo;
 	}
 
+	public String getMarca(){
+		return marca;
+	}
+	public float getCosto(){
+		return costo;
+	}
+
 	public String toString(){
 		return marca + "\t"+ costo;
+	}
+
+	public int compareTo(Dispositivo o){
+		if(this.marca.compareTo(o.marca) !=0){
+			return this.marca.compareTo(o.marca);
+		}
+		if(this.costo != o.costo){
+			return o.costo -  ((int) this.costo);
+		}		
 	}
 }
