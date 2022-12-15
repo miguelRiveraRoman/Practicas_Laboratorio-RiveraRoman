@@ -1,4 +1,4 @@
-package mx.edu.elextra.extraeval.dispositivos;
+package mx.edu.elextra.extraeval.Dispositivos;
 
 public class Dispositivo implements Comparable<Dispositivo> {
 
@@ -25,8 +25,9 @@ public class Dispositivo implements Comparable<Dispositivo> {
 		if(this.marca.compareTo(o.marca) !=0){
 			return this.marca.compareTo(o.marca);
 		}
-		if(this.costo != o.costo){
-			return o.costo -  ((int) this.costo);
-		}		
+		if(this.costo == o.costo){
+			return 0;
+		}	
+		return(o.costo <this.costo)? -1 : 1;	
 	}
 }
