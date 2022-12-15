@@ -1,4 +1,4 @@
-package mx.edu.elextra.extraeval.Dispositivos;
+package mx.edu.elextra.extraeval.dispositivos;
 
 public class Dispositivo implements Comparable<Dispositivo> {
 

@@ -1,11 +1,12 @@
-package mx.edu.elextra.extraeval.Dispositivos;
-import mx.edu.elextra.extraeval.dispositivo;
+package mx.edu.elextra.extraeval.dispositivos;
+import mx.edu.elextra.extraeval.dispositivos.Dispositivo;
 
 public class Computadora extends Dispositivo{
 	private int ram;
 	public Computadora(String marca, float costo, int ram){
+		super(marca, costo);
 		this.ram = ram;
-		super(marca,costo);
+
 	}
 
 	public int getRam(){
