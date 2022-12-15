@@ -22,6 +22,7 @@ public class Ventana extends JFrame{
 	}
 	private void initComponents(){
 		// Establecer el el tipo de JFrame como un FlowLayout
+		
 		// Establecer el cierre de la aplicación al cerrar la ventana
 		// Crear la Barra de Menú mb
 		// Crear el Menú mnFile "Archivo"
