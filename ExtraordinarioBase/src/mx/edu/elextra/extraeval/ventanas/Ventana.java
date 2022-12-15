@@ -1,4 +1,4 @@
-public class Ventana{
+public class Ventana extends JFrame{
 	public Ventana(){
 		initComponents();
 		setJMenuBar(mb);
