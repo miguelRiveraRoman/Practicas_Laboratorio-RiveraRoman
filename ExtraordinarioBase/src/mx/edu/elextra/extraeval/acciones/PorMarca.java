@@ -7,6 +7,7 @@ public class PorMarca implements Comparator<Dispositivo>{
 		if(d1.getMarca().compareTo(d2.getMarca()) !=0){
 			return d1.getMarca().compareTo(d2.getMarca());
 		}
+		return (d1.getCosto()>d2.getCosto())? -1 : 1;
 	}
 
 }
